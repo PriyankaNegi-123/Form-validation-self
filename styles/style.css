@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-dark: #1c2042;
+    --clr-white: #fff;
+    --max-width: 1140px;
+    --transition: all 0.5s ease;
+}
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:var(--clr-white);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.btn{
+    display: inline-block;
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--clr-dark);
+    color: var(--clr-white);
+    border: 2px solid var(--clr-dark);
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    width: 32rem;
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 0.5rem  1.75rem 3rem 1.75rem;
+    background-color: var(--clr-dark);
+    color: var(--clr-white);
+    border-radius: 10px;
+}
+
+.title{
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.submit-form{
+    margin-top: 1rem;
+}
+
+.form-control{
+    position: relative;
+}
+
+label, input{
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+input{
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form-control.error input{
+    border-color: red;
+}
+
+.form-control.success input{
+    border-color: green;
+}
+
+.form-control small{
+    color: red;
+    font-size: 0.8rem;
+    /* position: absolute;
+    bottom: -1.5rem;
+    left: 0.5rem; */
+    margin-bottom: 0.1rem;
+    visibility: hidden;
+    /* display: none; */
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.btn-light{
+    background-color: var(--clr-white);
+    border: 2px solid var(--clr-white);
+    color: var(--clr-dark);
+    transition: var(--transition)
+}
+
+.btn-light:hover{
+    background-color: transparent;
+    color: var(--clr-white);
+}
+
+.btn-block{
+    display:block;
+    width: 100%;
+    margin: 1.5rem auto 0.5rem auto;
+}
+
+@media screen and (max-width: 768px){
+    .card{
+        width: 25rem;
+    }
+
+    input{
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+
