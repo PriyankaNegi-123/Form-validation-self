@@ -11,7 +11,7 @@
 :root{
     --clr-dark: #1c2042;
     --clr-white: #fff;
-    --max-width: 1140px;
+    --max-width: 450px;
     --transition: all 0.5s ease;
 }
 
@@ -43,9 +43,9 @@ li{
 .btn{
     display: inline-block;
     border-radius: 8px;
-    padding: 0.8rem 1.5rem;
-    margin-top: 0.5rem;
-    font-size: 1.25rem;
+    padding: 0.6rem 1.5rem;
+    margin-top: 0.1rem;
+    font-size: 1.20rem;
     font-weight: 600;
     cursor: pointer;
     background-color: var(--clr-dark);
@@ -71,13 +71,13 @@ li{
 }
 
 .title{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 0.5rem;
 }
 
 .submit-form{
-    margin-top: 1rem;
+    margin-top: 0.6rem;
 }
 
 .form-control{
@@ -87,8 +87,8 @@ li{
 label, input{
     display: block;
     width: 100%;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
 }
 
 label{
@@ -97,8 +97,8 @@ label{
 }
 
 input{
-    padding: 0.75rem 1.25rem;
-    font-size: 1.25rem;
+    padding: 0.65rem 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
     border-radius: 10px;
     outline: none;
@@ -114,7 +114,7 @@ input{
 
 .form-control small{
     color: red;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     /* position: absolute;
     bottom: -1.5rem;
     left: 0.5rem; */
@@ -142,7 +142,7 @@ input{
 .btn-block{
     display:block;
     width: 100%;
-    margin: 1.5rem auto 0.5rem auto;
+    margin: 0.5rem auto 0.01rem auto;
 }
 
 @media screen and (max-width: 768px){
